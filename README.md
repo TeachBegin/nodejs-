@@ -1,3 +1,4 @@
 # nodejs-
+SkillTree是一个nodejs入门资料的文件夹，里面有从安装到配置文件及一些简单代码
 我会把我所学过的word文档或者其他的放入到这里来
 react-demos-master 是学习react的demo
