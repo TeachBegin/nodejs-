@@ -1,0 +1,39 @@
+{
+  "root": true,
+
+  "extends": "airbnb",
+
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true
+  },
+
+  "rules": {
+    semi: 0, # 分号警告关掉
+    max-len: 0, # 允许代码字数超过100
+    no-console: 0, # 允许使用控制台
+    comma-dangle: 0, # 逗号缺失警告关掉
+    padded-blocks: 0, # 块内填充,有时个人喜欢在方法声明下面空一行
+    no-unused-vars: 1, # 暂时没用到的变量只提醒
+    no-multi-assign: 0, # 允许链式赋值
+    no-irregular-whitespace: 0, # 允许不规则空白
+
+
+    # Webpack 相关规则
+    import/no-extraneous-dependencies: 0, # 关掉警告第三方库应放 dependencies 还是 devDependencies 。放哪我自己心里没点数吗？
+
+
+    # API 相关代码规则
+    global-require: 0, # 允许在顶层以外被调用
+    no-param-reassign: 0, # 允许对函数参数再赋值
+
+
+    # Web/React 相关规则
+    react/prop-types: 0, # 暂时不用做 propTypes 声明
+    react/jsx-filename-extension: [1, { "extensions": [".js", ".jsx"] }], # 允许jsx和js为扩展名
+    jsx-a11y/anchor-is-valid: 0, # react-router 的 Link to 会转成 <a> ，该规则要求必须有 href 。
+    jsx-a11y/no-autofocus: 0, # 没搞清干嘛专门出个规则不给使用 autofocus
+    react/jsx-no-bind: 0, # 关掉「不允许在jsx中使用.bind()」的规则
+  }
+}
